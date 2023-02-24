@@ -1,9 +1,32 @@
-.body{
-  font-size: 16px;
+html,
+body{
+  height: 100%;
 }
 
-.container{
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.wrapper{
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a{
+  font-size: 14px;
+  color: $text;
+  @extend %rubik-400;
 }

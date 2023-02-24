@@ -1,7 +1,36 @@
 $title: #436372;
 $btn: #a3bbc8;
+$bg:#fef7f0;
+$text:#7b7b7b;
 
-%rubik{
-  font-family: "Rubik-Medium", sans-serif;
+%rubik-400 {
+  font-family: "Rubik-Regular", sans-serif;
   font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: "Rubik-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%DMSans-400 {
+  font-family: "DMSans-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%DMSans-700 {
+  font-family: "DMSans-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%logo {
+  display: flex;
+  align-items: center;
+  .logo-text {
+    padding-left: 15px;
+    font-size: 36px;
+    line-height: 58px;
+    color: $title;
+    @extend %rubik-500;
+  }
 }
