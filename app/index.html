@@ -1,16 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="images/logo.png" alt="logo" />
+            <span class="logo-text">Glee.</span>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Home +</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">About</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Services</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Pages +</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">News</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <div class="user-nav__search">
+              <a class="user-nav__link" href="#">
+                <img
+                  class="user-nav__link-img"
+                  src="images/icons/search.png"
+                  alt="user icon"
+                />
+              </a>
+            </div>
+            <div class="user-nav__heart-cart">
+              <div class="user-nav__heart">
+                <a class="user-nav__heart-link" href="#">
+                  <img
+                    class="user-nav__heart-link-img"
+                    src="images/icons/heart.png"
+                    alt="user icon"
+                  />
+                  <span class="user-nav__num">0</span>
+                </a>
+              </div>
+              <div class="user-nav__cart">
+                <a class="user-nav__cart-link" href="#">
+                  <img
+                    class="user-nav__cart-link-img"
+                    src="images/icons/cart.png"
+                    alt="user icon"
+                  />
+                  <span class="user-nav__num">0</span>
+                </a>
+              </div>
+            </div>
+            <button class="user-nav__btn">
+              <img
+                class="user-nav__btn-img"
+                class="user-nav__btn-img"
+                src="images/icons/btn.png"
+                alt="user btn"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
 
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__items footer-top__contact">
+            <a class="logo footer-top__logo" href="#">
+              <img src="images/logo.png" alt="logo" />
+              <span class="logo-text">Glee.</span>
+            </a>
+            <div class="footer-top__adress">
+              <span class="footer-top__address-design">ADDRESS:</span>
+              <a class="footer-top__address-link" href="#">
+                4772 Wines Lane Houston, TX 77032
+              </a>
+            </div>
+            <div class="footer-top__phone">
+              <span class="footer-top__telephone-design">TELEPHONE:</span>
+              <a class="footer-top__phone-link" href="tel:8323475843"
+                >+832-347-5843
+              </a>
+            </div>
+            <div class="footer-top__email">
+              <span class="footer-top__email-design">EMAIL:</span>
+              <a class="footer-top__email-link" href="mailto:contact@Glee.com"
+                >contact@Glee.com
+              </a>
+            </div>
+          </div>
+          <div class="footer-top__items footer-top__nav">
+            <h6 class="footer-top__title">SERVICES</h6>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">About us </a>
+            </ul>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Return Policy</a>
+            </ul>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Our Blog</a>
+            </ul>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Contact Us</a>
+            </ul>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Terms & Condition</a>
+            </ul>
+          </div>
+          <div class="footer-top__items footer-top__nav">
+            <h6 class="footer-top__title">ACCOUNT</h6>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Your Account </a>
+            </ul>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Checkout</a>
+            </ul>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Login</a>
+            </ul>
+            <ul class="footer-top__item">
+              <a class="footer-top__link" href="#">Register</a>
+            </ul>
+          </div>
+          <div class="footer-top__items footer-top__items-form">
+            <h6 class="footer-top__title">NEWSLETTER</h6>
+            <p class="footer-top__text">
+              Subscribe by our newsletter and get update protidin.
+            </p>
+            <form class="footer-top__form" action="#">
+              <input
+                class="footer-top__form-input"
+                type="email"
+                placeholder="Email address"
+                required
+              />
+              <button class="footer-top__form-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-bottom__copy">
+            ©2020 CopyRight Example. All rights reserved.
+          </p>
+          <div class="footer-bottom__menu-bottom">
+            <ul class="footer-bottom__menu-bottom-items">
+              <li class="footer-bottom__menu-bottom-item">
+                <a class="footer-bottom__menu-bottom-link" href="#">Home</a>
+              </li>
+              <li class="footer-bottom__menu-bottom-item">
+                <a class="footer-bottom__menu-bottom-link" href="#">About</a>
+              </li>
+              <li class="footer-bottom__menu-bottom-item">
+                <a class="footer-bottom__menu-bottom-link" href="#">Blog</a>
+              </li>
+              <li class="footer-bottom__menu-bottom-item">
+                <a class="footer-bottom__menu-bottom-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
- 
-  <script src="js/main.min.js"></script>
-</body>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
