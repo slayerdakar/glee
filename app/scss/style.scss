@@ -1,10 +1,11 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
-  padding: 50px 0;
+  padding: 40px 0;
   @extend %rubik-500;
   &__inner {
     display: flex;
@@ -18,7 +19,7 @@
 }
 
 .menu {
-  margin-left: 110px;
+  margin-left: 155px;
   &__list {
     display: flex;
   }
@@ -49,7 +50,7 @@
     align-items: end;
     width: 180px;
     height: 50px;
-    background-color: #fcd7b6;
+    background-color: $slider-bg;
     margin: 0 20px;
     border-radius: 40px 40px 40px 40px;
   }
@@ -148,6 +149,10 @@
     padding-bottom: 35px;
   }
 
+  &__form{
+    display: flex;
+  }
+
   &__form-input {
     background-color: $bg;
     max-width: 170px;
@@ -203,5 +208,92 @@
   }
 }
 
-@import "media";
+.top-slider {
+  &__wrapper {
+    background-color: $slider-bg;
+    padding: 100px 0 45px;
+  }
+  &__container {
+    max-width: 1440px;
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__title {
+    max-width: 450px;
+    font-size: 72px;
+    line-height: 70px;
+    @extend %rubik-500;
+    margin-bottom: 40px;
+    color: $slider-text;
+  }
+  &__text {
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    @extend %rubik-400;
+    margin-bottom: 40px;
+    color: $title;
+  }
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 20px;
+    height: 60px;
+    width: 200px;
+    background-color: $btn;
+    cursor: pointer;
+    margin-bottom: 205px;
+  }
+  &__link {
+    font-size: 15px;
+    color: #fff;
+    @extend %rubik-500;
+  }
+  &__content {
+    padding-top: 125px;
+    padding-left: 120px;
+  }
+  &__photo{
+    position:relative;
+    max-width: 760px;
+    width: 100%;
+  }
+  &__img{
+    position: absolute;
+    left: 0;
+    top: 200px;
+  }
+  &__img-grad{
+    margin-left: auto;
+  }
 
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  li {
+    padding: 0 6px;
+    button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #fde3cc;
+      color: $slider-text;
+      font-size: 11px;
+      @extend %rubik-500 ;
+      border: none;
+    }
+    &.slick-active{
+      button{
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@import "media";
