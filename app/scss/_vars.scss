@@ -2,6 +2,8 @@ $title: #436372;
 $btn: #a3bbc8;
 $bg:#fef7f0;
 $text:#7b7b7b;
+$slider-bg:#fcd7b6;
+$slider-text: #243f4d;
 
 %rubik-400 {
   font-family: "Rubik-Regular", sans-serif;
@@ -16,6 +18,11 @@ $text:#7b7b7b;
 %DMSans-400 {
   font-family: "DMSans-Regular", sans-serif;
   font-weight: 400;
+}
+
+%DMSans-500 {
+  font-family: "DMSans-Medium", sans-serif;
+  font-weight: 500;
 }
 
 %DMSans-700 {
