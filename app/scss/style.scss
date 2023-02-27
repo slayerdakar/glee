@@ -318,7 +318,7 @@
     padding: 35px 0;
     width: 33.33%;
   }
-  &__item-icon{
+  &__item-icon {
     margin-bottom: 20px;
     margin-right: 25px;
   }
@@ -333,10 +333,108 @@
     font-size: 16px;
     line-height: 30px;
     @extend %DMSans-400;
-    
   }
 }
 
+.products {
+  &__inner {
+    padding: 80px 0 90px;
+  }
+  &__filter {
+    display: flex;
+    justify-content: center;
+  }
+  &__filter-btn {
+    padding: 0 15px;
+  }
+  &__btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    @extend %DMSans-700;
+    font-size: 16px;
+    color: #b8b8b8;
+    background-color: transparent;
+    margin-bottom: 80px;
+    &:hover {
+      color: #292929;
+    }
+  }
+  &__items {
+    display: grid;
+    min-height: 800px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+  }
+  &__item {
+    background-color: #fff;
+    width: 270px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
 
+  &__nav {
+    display: none;
+  }
+  &__nav-list {
+    display: flex;
+  }
+
+  &__nav-item {
+    margin: 0 20px;
+    line-height: 0;
+    position: relative;
+    z-index: 0;
+  }
+  &__nav-link::before {
+    content: "";
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  &__nav-link:hover {
+    path {
+      fill: #fff;
+    }
+    &::before{
+    background-color: $btn;
+    }
+  }
+
+  .products__item {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 10px;
+    position: relative;
+    &:hover .products__nav {
+      position: absolute;
+      top: 51%;
+      display: block;
+    }
+  }
+  &__item-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__item-link,
+  &__item-num {
+    font-size: 16px;
+    line-height: 40px;
+    @extend %DMSans-500;
+    color: $slider-text;
+  }
+  &__item-num {
+    color: $btn;
+  }
+}
 
 @import "media";

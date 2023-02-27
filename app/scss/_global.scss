@@ -30,3 +30,13 @@ a{
   color: $text;
   @extend %rubik-400;
 }
+
+.title{
+  text-align: center;
+  @extend %DMSans-700;
+  font-size: 36px;
+  line-height: 1.2;;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
