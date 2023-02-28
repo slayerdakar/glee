@@ -214,7 +214,6 @@
     // background-image: url(../images/slider/slider-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-
     padding: 100px 0 45px;
   }
   &__container {
@@ -240,23 +239,19 @@
     margin-bottom: 40px;
     color: $title;
   }
-  &__btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 25px;
-    padding-right: 20px;
-    height: 60px;
-    width: 200px;
+  &__link-btn {
+    padding: 23px 20px 20px 27px;
     background-color: $btn;
-    cursor: pointer;
-    margin-bottom: 205px;
   }
-  &__link {
+
+  &__link-text {
+    display: inline-block;
+    padding-right: 60px;
     font-size: 15px;
     color: #fff;
     @extend %rubik-500;
   }
+
   &__content {
     padding-top: 125px;
     padding-left: 120px;
@@ -404,8 +399,8 @@
     path {
       fill: #fff;
     }
-    &::before{
-    background-color: $btn;
+    &::before {
+      background-color: $btn;
     }
   }
 
