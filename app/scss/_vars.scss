@@ -5,6 +5,11 @@ $text:#7b7b7b;
 $slider-bg:#fcd7b6;
 $slider-text: #243f4d;
 
+%rubik-300 {
+  font-family: "Rubik-Light", sans-serif;
+  font-weight: 300;
+}
+
 %rubik-400 {
   font-family: "Rubik-Regular", sans-serif;
   font-weight: 400;
@@ -45,4 +50,12 @@ $slider-text: #243f4d;
     color: $title;
     @extend %rubik-500;
   }
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
