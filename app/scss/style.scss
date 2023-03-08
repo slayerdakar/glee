@@ -762,30 +762,31 @@
     padding: 23px 0 20px;
     cursor: pointer;
   }
-  
-  &__check-error .modal__label{
+
+  &__check-error .modal__label {
     margin-bottom: 0;
   }
-  &__check-error{
+  &__check-error {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
     @extend %rubik-400;
     color: #436372;
+    & .modal__label {
+      padding-left: 27px;
+    }
   }
-  .modal-checkbox{
-    padding-left: 27px;
-  }
-  &__check-input{
+
+  &__check-input {
     @extend %checkbox-hidden;
-    &:checked + .modal__checkbox-log{
+    &:checked + .modal__checkbox-log {
       background-image: url(../images/icons/check-log.png);
       background-repeat: no-repeat;
       background-position: center;
     }
   }
-  &__checkbox-log{
+  &__checkbox-log {
     width: 14px;
     height: 14px;
     background-color: #ebebeb;
@@ -794,11 +795,11 @@
     top: 1px;
     border-radius: 3px;
   }
-  &__registere-text{
+  &__registere-text {
     text-align: center;
     margin: 32px 0 27px;
   }
-  &__registere-btn{
+  &__registere-btn {
     display: block;
     text-align: center;
     padding: 19px;
@@ -811,5 +812,36 @@
   }
 }
 
-@import "media";
+.terms {
+  padding: 110px 0;
+  &__content:nth-child(2) {
+    margin-bottom: 60px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    @extend %rubik-500;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: left;
+    color: $slider-text;
+  }
+  &__list {
+    margin-left: 33px;
+    margin-bottom: 60px;
+    list-style-type: decimal-leading-zero;
+  }
+  &__list-text,
+  &__text {
+    text-align: left;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $slider-text;
+    margin-bottom: 20px;
+  }
+  &__text{
+    margin-bottom: 0;
+  }
+}
 
+@import "media";
