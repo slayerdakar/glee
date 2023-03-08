@@ -774,9 +774,11 @@
     @extend %rubik-400;
     color: #436372;
   }
+  .modal-checkbox{
+    padding-left: 27px;
+  }
   &__check-input{
     @extend %checkbox-hidden;
-    padding-left: 27px;
     &:checked + .modal__checkbox-log{
       background-image: url(../images/icons/check-log.png);
       background-repeat: no-repeat;
