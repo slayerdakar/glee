@@ -839,9 +839,262 @@
     color: $slider-text;
     margin-bottom: 20px;
   }
-  &__text{
+  &__text {
     margin-bottom: 0;
   }
 }
 
+.about {
+  padding: 120px 0;
+
+  .about-creative {
+    padding-bottom: 120px;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+    &__content {
+      max-width: 555px;
+      margin: auto 0 auto 50px;
+    }
+    &__experience {
+      display: flex;
+      justify-content: left;
+    }
+    &__experience-num {
+      @extend %rubik-700;
+      font-size: 140px;
+      line-height: 105px;
+      color: $btn;
+    }
+    &__experience-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-left: 25px;
+      & span {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $slider-text;
+      }
+    }
+    &__title {
+      margin: 45px 0;
+    }
+    &__text {
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $slider-text;
+      margin-bottom: 55px;
+    }
+    &__progress {
+      display: flex;
+      justify-content: left;
+      padding-top: 30px;
+      border-top: 3px solid rgb(9, 49, 111, 0.1);
+    }
+    &__progress-projects {
+      padding: 10px 25px 15px 55px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 37px;
+        height: 38px;
+        background-image: url(../images/icons/projects-icon.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 20px;
+      }
+    }
+    &__progress-revenue {
+      padding: 10px 35px 15px 90px;
+      border-left: 1px solid #e6eaf0;
+      border-right: 1px solid #e6eaf0;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 44px;
+        height: 40px;
+        background-image: url(../images/icons/revenue-icon.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 28px;
+        top: 20px;
+      }
+    }
+    &__progress-awards {
+      padding: 10px 0 15px 88px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 43px;
+        height: 42px;
+        background-image: url(../images/icons/awards-icon.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 26px;
+        top: 18px;
+      }
+    }
+    & span {
+      display: block;
+    }
+    &__progress-num,
+    .about-info__item-num {
+      @extend %DMSans-700;
+      font-size: 36px;
+      line-height: 38px;
+      color: $slider-text;
+    }
+    &__progress-text {
+      @extend %DMSans-700;
+      font-size: 16px;
+      line-height: 17px;
+      color: #4c4c4c;
+    }
+  }
+
+  .about-info {
+    background-color: $slider-bg;
+    padding: 82px 0 73px;
+    &__list {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      text-align: center;
+    }
+    &__item-image {
+      margin-bottom: 12px;
+    }
+    &__item-num {
+      margin-bottom: 15px;
+      @extend %DMSans-700;
+      font-size: 36px;
+      line-height: 38px;
+      color: $slider-text;
+    }
+    &__item-text {
+      @extend %DMSans-700;
+      font-size: 18px;
+      line-height: 32px;
+      color: $slider-text;
+    }
+  }
+
+  .about-team {
+    padding-top: 120px;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__content {
+      text-align: left;
+      max-width: 320px;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__content-text {
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $slider-text;
+      margin-bottom: 40px;
+    }
+    &__content-btn {
+      padding: 18px 0px 18px 18px;
+      background-color: $btn;
+      border-radius: 5px;
+      width: 170px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+    &__content-link {
+      padding-right: 20px;
+      @extend %poppins-600;
+      font-size: 15px;
+      line-height: 55px;
+      color: #fff;
+    }
+    &__content-btn-icon {
+      width: 15px;
+      height: 11px;
+    }
+    &__box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 40px;
+    }
+    &__item-content {
+      padding: 30px 20px 25px 25px;
+      max-width: 325px;
+      min-height: 110px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      position: relative;
+      margin-top: -47px;
+      box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05)
+    }
+    &__item-content-initials{
+      @extend %DMSans-700;
+      font-size: 22px;
+      line-height: 26px;
+      color:$title;
+    }
+    &__item-content-office{
+      @extend %rubik-400;
+      font-size: 16px;
+      line-height: 30px;
+      color:#565872;
+    }
+    &__sotial{
+      display: flex;
+      align-items: center;
+    }
+    &__sotial-list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__sotial-item + .about-team__sotial-item{
+      padding-left: 30px;
+    }
+    &__sotial-link{
+      display: block;
+      position: relative;
+      z-index: 1;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color:#f6f6f6; 
+        left: -11px;
+        top: -11px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
 @import "media";
+
