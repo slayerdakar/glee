@@ -87,4 +87,5 @@ $(function () {
     },
   };
   var mixer1 = mixitup(mixproducts, config);
+
 });
