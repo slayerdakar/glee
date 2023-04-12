@@ -1,6 +1,11 @@
 $(function () {
+  $(".user-nav__btn").on("click", function () {
+    $(".menu__list").toggleClass("menu__list--active");
+  });
 
-  
+  $(".product__filter-btn").on("click", function () {
+    $(".product__filters").slideToggle();
+  });
 
   $(".filter-price__input").ionRangeSlider({
     type: "double",
@@ -25,7 +30,6 @@ $(function () {
     );
     $($(this).attr("href")).addClass("product-tabs__content-item--active");
   });
-
 
   $(".product-slide__thumb").slick({
     asNavFor: ".product-slide__big",
@@ -85,13 +89,33 @@ $(function () {
     // autoplaySpeed: 2000
   });
 
-  $('.product-related__slider-inner').slick({
+  $(".product-related__slider-inner").slick({
     dots: false,
     infinite: false,
-    arrows:true,
+    arrows: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 604,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $(".select-style, .product-one__item-num").styler({});
@@ -116,16 +140,17 @@ $(function () {
       '<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1">  <g><path " d="M 6.601562 0.386719 C 6.492188 0.148438 6.257812 0 6.003906 0 C 5.746094 0 5.515625 0.148438 5.402344 0.386719 L 4.0625 3.230469 L 1.070312 3.683594 C 0.820312 3.722656 0.613281 3.902344 0.535156 4.152344 C 0.457031 4.398438 0.519531 4.671875 0.699219 4.851562 L 2.871094 7.070312 L 2.359375 10.199219 C 2.316406 10.457031 2.421875 10.71875 2.628906 10.871094 C 2.832031 11.023438 3.105469 11.042969 3.332031 10.921875 L 6.003906 9.449219 L 8.675781 10.921875 C 8.902344 11.042969 9.175781 11.027344 9.382812 10.871094 C 9.585938 10.714844 9.691406 10.457031 9.648438 10.199219 L 9.136719 7.070312 L 11.304688 4.851562 C 11.484375 4.671875 11.550781 4.398438 11.472656 4.152344 C 11.390625 3.902344 11.183594 3.722656 10.933594 3.683594 L 7.941406 3.230469 Z M 6.601562 0.386719 "/></g></svg>',
   });
 
-  var mixer = mixitup(".product-content__inner,.design__inner,.blog-page__content");
 
   var mixproducts = document.querySelector('[data-ref="mix-products"]');
+  var mixdesign = document.querySelector('[data-ref="mix-design"]');
+ 
   var config = {
     controls: {
       scope: "local",
     },
   };
+
   var mixer1 = mixitup(mixproducts, config);
-
+  var mixer2 = mixitup(mixdesign, config);
   
-
 });
